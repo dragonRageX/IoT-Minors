@@ -1,1 +1,1 @@
-# IoT-Minors
+# IoT-Honors & Minors
