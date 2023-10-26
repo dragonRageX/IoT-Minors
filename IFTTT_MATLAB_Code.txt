@@ -1,0 +1,8 @@
+% Enter your MATLAB Code below
+channelID= 1567694;
+tempdata= thingSpeakRead(1567694,'Fields',[3],'NumPoints',1,'ReadKey','1YVL9SHOEH7QXW9P')
+iftttURL='https://maker.ifttt.com/trigger/testiot/with/key/o62hoyhDX19Vj1Kntb0VdYb1idDlq62aAx7e4ePacYU'
+readAPIKey= '1YVL9SHOEH7QXW9P';
+Message = 'Temperature is normal';
+disp(Message);
+webwrite(iftttURL,'value1',tempdata,'value2',Message);
